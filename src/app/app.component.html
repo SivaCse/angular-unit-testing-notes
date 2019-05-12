@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  {{todos | json}}
+  <button (click)="addTodo()">
+    Add Todo
+  </button>
+
+  <input #inp type="text" value="Ram" (click)="inputClick(inp.value)">
+<!-- 
+  <ul *ngFor="let todo of todosAsync | async">
+    <li>{{todo}}</li>
+  </ul> -->
+
+  <!-- <ul *ngFor="let todo of todos">
+    <li>{{todo}}</li>
+  </ul> -->
+
+  {{todos}}
+
+  TodoAsync
+
+  {{todosAsync | async}}
+</div>
+
